@@ -1,12 +1,12 @@
 services:
   client:
-    build: ./client
+    build: ./next-client
     ports:
       - "3000:3000"
     volumes:
-      - ./client:/app
+      - ./next-client:/app
       - /app/node_modules
-      - /app/.next
+      - /app/.nexts
     command: npm run dev
 
   server:
