@@ -10,10 +10,15 @@ import { redisClient } from '@config/redis';
 import routes from '@routes/index';
 import { globalErrorHandler } from '@middlewares/globalErrorHandler';
 import logger from '@config/logger';
+import * as path from "path";
 
-dotenv.config();
 
 const app: Application = express();
+
+
+dotenv.config({
+  path: path.resolve(__dirname, "../.env"),
+});
 
 // Security Middlewares
 app.use(helmet());
