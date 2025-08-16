@@ -17,7 +17,7 @@ To run the project locally, you need to have Docker and Docker Compose installed
 2.  Create a `.env` file in the `server` directory with the following variables:
 
     ```
-    PORT=3001
+    PORT=8000
     POSTGRES_HOST=postgres
     POSTGRES_PORT=5432
     POSTGRES_USER=user
